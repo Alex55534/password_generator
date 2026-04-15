@@ -59,11 +59,18 @@ A simple command-line password generator written in Python. It allows you to cre
 text
 
 Select a password creation method (Custom = 1, All characters together = 2) Press 0 to exit the program 2
+
 Enter length 12
+
 5aB#kL9@mP&d
+
 Select a password creation method (Custom = 1, All characters together = 2) Press 0 to exit the program 1
+
 Enter length 8
- letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6
+
+letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6
+
 Select a password creation method 1
+
 aB3dE9gH
 
