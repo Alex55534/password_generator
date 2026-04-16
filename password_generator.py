@@ -19,9 +19,15 @@ def random_generate():
             print("Numbers only")
             continue
     all =  lowercase_letters + cappital_letters + digits + punctuation
-    for i in range(lenth):
-        generate = random.choice(all)
-        print(generate, end = '')
+    while True:
+        for i in range(lenth):
+            generate = random.choice(all)
+            print(generate, end= '')            
+        print("\n Password Generated")
+        now = input("Generated more: yes/no")
+        if now == "no":
+            print("Exit")
+            break
 
 def choise_generate():
     while True:
@@ -37,7 +43,11 @@ def choise_generate():
     while True:
         print()
         print(" letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6 ")
-        way = int(input("Select a password creation method"))
+        try:
+            way = int(input("Select a password creation method"))
+        except ValueError:
+            print("Only numbers")
+            continue
         if way == 1:
             first = all_letters + digits
             for i in range(lenth):
