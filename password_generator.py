@@ -7,6 +7,7 @@ all_letters = string.ascii_letters
 digits = string.digits
 punctuation = string.punctuation
 
+
 def random_generate():   
     while True:
         try:
@@ -32,37 +33,47 @@ def choise_generate():
         except ValueError:
             print("Numbers only")
             continue
-    print(" letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6 ")
-    way = int(input("Select a password creation method"))
-    if way == 1:
-        first = all_letters + digits
-        for i in range(lenth):
-            generate_first = random.choice(first)
-            print(generate_first, end = '')
-    if way == 2:
-        second = digits + punctuation
-        for i in range(lenth):
-            generate_first = random.choice(second)
-            print(generate_first, end = '')
-    if way == 3:
-        thidly = digits + punctuation
-        for i in range(lenth):
-            generate_first = random.choice(thidly)
-            print(generate_first, end = '')
-    if way == 4:
-        for i in range(lenth):
-            generate_first = random.choice(digits)
-            print(generate_first, end = '')
-    if way == 5:
-        for i in range(lenth):
-            generate_first = random.choice(punctuation)
-            print(generate_first, end = '')
-    if way == 6:
-        for i in range(lenth):
-            generate_first = random.choice(all_letters)
-            print(generate_first, end = '')
 
-                
+    while True:
+        print()
+        print(" letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6 ")
+        way = int(input("Select a password creation method"))
+        if way == 1:
+            first = all_letters + digits
+            for i in range(lenth):
+                generate_first = random.choice(first)
+                print(generate_first, end = '')
+        elif way == 2:
+            second = digits + punctuation
+            for i in range(lenth):
+                generate_first = random.choice(second)
+                print(generate_first, end = '')
+        elif way == 3:
+            thidly = all_letters + punctuation
+            for i in range(lenth):
+                generate_first = random.choice(thidly)
+                print(generate_first, end = '')              
+        elif way == 4:
+            for i in range(lenth):
+                generate_first = random.choice(digits)
+                print(generate_first, end = '')             
+        elif way == 5:
+            for i in range(lenth):
+                generate_first = random.choice(punctuation)
+                print(generate_first, end = '')
+                        
+        elif way == 6:
+            for i in range(lenth):
+                generate_first = random.choice(all_letters)
+                print(generate_first, end = '')
+        elif way < 1 or way > 6:
+            print("Wrong action")
+        
+        print("\n The password has been generated")
+        again = input("Generate more? (yes/no): ").lower()
+        if again != "yes":
+            print("Exit.")
+            break
 while True:
     print()
     try:
