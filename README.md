@@ -31,29 +31,47 @@ A simple command-line password generator written in Python. It allows you to cre
 🕹️ Usage Example
 
 Select a password creation method (Custom = 1, All characters together = 2) Press 0 to exit the program 2
+
 Enter length 12
+
 x9F#kL2@mP&z
+
  Password Generated
+
 Generated more: yes/no yes
+
 G7$bN3^pL8qR
+
  Password Generated
+
 Generated more: yes/no no
+
 Exit
 
 Select a password creation method (Custom = 1, All characters together = 2) Press 0 to exit the program 1
+
 Enter length 8
 
  letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6
+
 Select a password creation method 1
+
 aB3dE9gH
+
  The password has been generated
+
 Generate more? (yes/no): yes
 
  letters and numbers - 1, numbers and special characters - 2, special characters and letters - 3, only numbers - 4, only special characters - 5, only letters - 6
+
 Select a password creation method 3
+
 K#mP&zLq
+
  The password has been generated
+
 Generate more? (yes/no): no
+
 Exit.
 
 Select a password creation method (Custom = 1, All characters together = 2) Press 0 to exit the program 0
