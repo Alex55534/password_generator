@@ -7,6 +7,8 @@ all_letters = string.ascii_letters
 digits = string.digits
 punctuation = string.punctuation
 
+def all_funck(a,b, c, v):
+    return a + b + c + v
 
 def random_generate():   
     while True:
@@ -18,7 +20,7 @@ def random_generate():
         except ValueError:
             print("Numbers only")
             continue
-    all =  lowercase_letters + cappital_letters + digits + punctuation
+    all =  all_funck(lowercase_letters, cappital_letters, digits, punctuation)
     while True:
         for i in range(lenth):
             generate = random.choice(all)
